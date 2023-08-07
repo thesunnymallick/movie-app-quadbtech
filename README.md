@@ -1,5 +1,7 @@
 
 ## Quadbtech Assignment
+
+## Live Deployment 
 https://movie-app-psi-sable.vercel.app
 
 ## How to Use
@@ -22,9 +24,7 @@ npm run dev
 
 
 
-## Live Deployment 
 
-https://movie-app-psi-sable.vercel.app
 
 
 ## Tools/Libraries
