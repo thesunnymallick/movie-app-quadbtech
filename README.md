@@ -1,7 +1,7 @@
 
 ## Quadbtech Assignment
 
-## Live Deployment 
+## Live 
 https://movie-app-psi-sable.vercel.app
 
 ## How to Use
