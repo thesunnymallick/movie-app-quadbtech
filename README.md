@@ -1,5 +1,6 @@
 
 ## Quadbtech Assignment
+https://movie-app-psi-sable.vercel.app
 
 ## How to Use
 
