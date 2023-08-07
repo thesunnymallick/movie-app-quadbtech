@@ -1,0 +1,140 @@
+@import '../app.scss';
+.allMovies {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.3rem 1rem;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movieCard {
+  width: 16rem;
+  flex-shrink: 0;
+  background-color: $black3;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .posterBlock img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 7px 7px 0px 0px;
+  }
+  .posterBlock {
+    position: relative;
+    .genres {
+      position: absolute;
+      bottom: 10px;
+      right: 5px;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: flex-end;
+      .genre {
+        padding: 0.3rem;
+        background-color: $pink;
+        color: white;
+        font-size: 0.8rem;
+        border-radius: 7px;
+        margin: 0rem 0.2rem;
+      }
+    }
+    .circleRating {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: -10px;
+      left: 5px;
+      background-color: white;
+      flex-shrink: 0;
+      border-radius: 50%;
+      padding: 2px;
+      .CircularProgressbar-text {
+        font-size: 34px;
+        font-weight: 700;
+        fill: $black;
+        .CircularProgressbar-trail {
+          stroke: transparent;
+        }
+      }
+    }
+  }
+
+  .textBlock {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0.5rem;
+    .title {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .date {
+      font-size: 1rem;
+      opacity: 0.4;
+    }
+    .details-btn {
+      text-decoration: none;
+      width: 90%;
+      //   height: 2rem;
+      padding: 0.7rem;
+      background-image: $gradient;
+      color: white;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 0.7rem 0rem;
+      border-radius: 7px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .allMovies {
+    padding: 1rem;
+  }
+  .movieCard {
+    width: 13rem;
+    .posterBlock {
+      .genres {
+        display: none;
+      }
+    }
+    .textBlock {
+      .title {
+        font-size: 1rem;
+      }
+      .date {
+        font-size: 0.9rem;
+      }
+      .details-btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .allMovies {
+    padding: 1rem 0.5rem;
+    gap: 7px;
+  }
+  .movieCard {
+    width: 11rem;
+    .textBlock {
+      .title {
+        font-size: 0.9rem;
+      }
+      .date {
+        font-size: 0.8rem;
+      }
+      .details-btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
